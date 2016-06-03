@@ -19,10 +19,12 @@
 		B26736461CFDDB3500F7CDF2 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26736451CFDDB3500F7CDF2 /* Photo.swift */; };
 		B29C64CD1CFF2F0000BFFF97 /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C64CC1CFF2F0000BFFF97 /* PhotoDetail.swift */; };
 		B29C64D21D0039D300BFFF97 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C64D11D0039D300BFFF97 /* PhotoDetailViewController.swift */; };
-		B2EF97131D01A821000557D0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF970D1D01A787000557D0 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B2EF97151D01A821000557D0 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF970E1D01A787000557D0 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B2EF97181D01B750000557D0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF970D1D01A787000557D0 /* Alamofire.framework */; };
-		B2EF97191D01B759000557D0 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF970E1D01A787000557D0 /* AlamofireImage.framework */; };
+		B2EF97261D01BA27000557D0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF97241D01BA27000557D0 /* Alamofire.framework */; };
+		B2EF97271D01BA27000557D0 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF97251D01BA27000557D0 /* AlamofireImage.framework */; };
+		B2EF97281D01BA40000557D0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF97241D01BA27000557D0 /* Alamofire.framework */; };
+		B2EF97291D01BA40000557D0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF97241D01BA27000557D0 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2EF972A1D01BA40000557D0 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF97251D01BA27000557D0 /* AlamofireImage.framework */; };
+		B2EF972B1D01BA40000557D0 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF97251D01BA27000557D0 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,14 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B26736441CFDD4F300F7CDF2 /* Embed Frameworks */ = {
+		B2EF972C1D01BA40000557D0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B2EF97131D01A821000557D0 /* Alamofire.framework in Embed Frameworks */,
-				B2EF97151D01A821000557D0 /* AlamofireImage.framework in Embed Frameworks */,
+				B2EF97291D01BA40000557D0 /* Alamofire.framework in Embed Frameworks */,
+				B2EF972B1D01BA40000557D0 /* AlamofireImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,8 +78,8 @@
 		B26736451CFDDB3500F7CDF2 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		B29C64CC1CFF2F0000BFFF97 /* PhotoDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetail.swift; sourceTree = "<group>"; };
 		B29C64D11D0039D300BFFF97 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
-		B2EF970D1D01A787000557D0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
-		B2EF970E1D01A787000557D0 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlamofireImage.framework; sourceTree = "<group>"; };
+		B2EF97241D01BA27000557D0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		B2EF97251D01BA27000557D0 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +87,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2EF97191D01B759000557D0 /* AlamofireImage.framework in Frameworks */,
-				B2EF97181D01B750000557D0 /* Alamofire.framework in Frameworks */,
+				B2EF97261D01BA27000557D0 /* Alamofire.framework in Frameworks */,
+				B2EF97281D01BA40000557D0 /* Alamofire.framework in Frameworks */,
+				B2EF97271D01BA27000557D0 /* AlamofireImage.framework in Frameworks */,
+				B2EF972A1D01BA40000557D0 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +211,8 @@
 		B2EF97111D01A7A1000557D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2EF970D1D01A787000557D0 /* Alamofire.framework */,
-				B2EF970E1D01A787000557D0 /* AlamofireImage.framework */,
+				B2EF97241D01BA27000557D0 /* Alamofire.framework */,
+				B2EF97251D01BA27000557D0 /* AlamofireImage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,7 +227,7 @@
 				B26735F11CFDA62E00F7CDF2 /* Sources */,
 				B26735F21CFDA62E00F7CDF2 /* Frameworks */,
 				B26735F31CFDA62E00F7CDF2 /* Resources */,
-				B26736441CFDD4F300F7CDF2 /* Embed Frameworks */,
+				B2EF972C1D01BA40000557D0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -495,11 +499,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Philips",
-					Test,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Philips Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -513,11 +515,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Philips",
-					Test,
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Philips Test/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

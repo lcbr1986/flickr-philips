@@ -58,7 +58,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             imageCache: AutoPurgingImageCache()
         )
         setInitialValue()
-        self.searchPhotosLabel.text = NSLocalizedString("Please insert a search term to filter the photos", comment: "")
     }
 
     override func didReceiveMemoryWarning() {
@@ -83,6 +82,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.currentPage = 1
         self.totalPages = 0
         self.photos = [Photo]()
+        self.searchPhotosLabel.text = NSLocalizedString("Please insert a search term to filter the photos", comment: "")
     }
 
     // MARK: - Navigation
@@ -120,6 +120,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.totalPages = totalPages
             self.photos.appendContentsOf(photos)
             if self.photos.count == 0 {
+                self.searchPhotosLabel.text = NSLocalizedString("No results for this search term", comment: "")
                 self.searchPhotosLabel.alpha = 1
             } else {
                 self.searchPhotosLabel.alpha = 0
