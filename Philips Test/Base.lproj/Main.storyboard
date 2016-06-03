@@ -258,7 +258,7 @@
                     <connections>
                         <outlet property="dateLabel" destination="mED-wm-FfL" id="WLn-3Z-dSb"/>
                         <outlet property="descriptionLabel" destination="WLD-1F-1tQ" id="W8U-H4-3ru"/>
-                        <outlet property="descriptionViewHeightConstraint" destination="WPc-YY-e0I" id="iwP-0v-5rp"/>
+                        <outlet property="descriptionView" destination="ubN-mP-CcX" id="6e3-3q-YS7"/>
                         <outlet property="detailsView" destination="36g-RN-pUi" id="dYO-vX-MRU"/>
                         <outlet property="imageView" destination="JId-vp-tEW" id="uJ8-N1-syK"/>
                         <outlet property="ownerLabel" destination="dY1-5s-xtw" id="TxN-hJ-bII"/>

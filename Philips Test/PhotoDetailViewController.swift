@@ -25,7 +25,7 @@ class PhotoDetailViewController: UIViewController, UIScrollViewDelegate {
     /// The image view where the photo is displayed
     @IBOutlet weak var imageView:UIImageView!
     /// The height constraint for the photo description view
-    @IBOutlet weak var descriptionViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var descriptionView:UIView!
     /// The image downloader
     var imageDownloader:ImageDownloader?
     
@@ -106,10 +106,9 @@ class PhotoDetailViewController: UIViewController, UIScrollViewDelegate {
         self.dateLabel.text = dateFormatter.stringFromDate(dateUploaded)
         self.ownerLabel.text = photo.owner!["realname"] as? String
         if photo.description == "" {
-            self.descriptionViewHeightConstraint.priority = 1000
-            self.descriptionViewHeightConstraint.constant = 0
+            self.descriptionView.alpha = 0
         } else {
-            self.descriptionViewHeightConstraint.priority = 750
+            self.descriptionView.alpha = 1
             self.descriptionLabel.text = photo.description
         }
         self.view.layoutIfNeeded()
