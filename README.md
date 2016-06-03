@@ -1,5 +1,5 @@
 # flickr-philips
-Test project
+Test project that communicates with the Flickr API to search and display pictures.
 
 ## Instalation
 
