@@ -21,6 +21,8 @@
 		B29C64D21D0039D300BFFF97 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C64D11D0039D300BFFF97 /* PhotoDetailViewController.swift */; };
 		B2EF97131D01A821000557D0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF970D1D01A787000557D0 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2EF97151D01A821000557D0 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF970E1D01A787000557D0 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2EF97181D01B750000557D0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF970D1D01A787000557D0 /* Alamofire.framework */; };
+		B2EF97191D01B759000557D0 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF970E1D01A787000557D0 /* AlamofireImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2EF97191D01B759000557D0 /* AlamofireImage.framework in Frameworks */,
+				B2EF97181D01B750000557D0 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
