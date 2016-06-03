@@ -178,8 +178,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2w-C1-Sr6">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mED-wm-FfL">
-                                                <rect key="frame" x="553" y="15" width="37" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mED-wm-FfL">
+                                                <rect key="frame" x="590" y="15" width="0.0" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="cHH-Qu-NYW"/>
                                                     <constraint firstAttribute="width" priority="750" constant="42" id="iQM-Gu-Wul"/>
@@ -188,8 +188,8 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dY1-5s-xtw">
-                                                <rect key="frame" x="10" y="15" width="535" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dY1-5s-xtw">
+                                                <rect key="frame" x="10" y="15" width="572" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="ux2-ls-kzW"/>
                                                 </constraints>
@@ -208,7 +208,7 @@
                                             <constraint firstAttribute="height" constant="50" id="rqd-Wl-J1o"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ubN-mP-CcX">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ubN-mP-CcX">
                                         <rect key="frame" x="0.0" y="502" width="600" height="34"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLD-1F-1tQ">
@@ -258,6 +258,7 @@
                     <connections>
                         <outlet property="dateLabel" destination="mED-wm-FfL" id="WLn-3Z-dSb"/>
                         <outlet property="descriptionLabel" destination="WLD-1F-1tQ" id="W8U-H4-3ru"/>
+                        <outlet property="descriptionViewHeightConstraint" destination="WPc-YY-e0I" id="iwP-0v-5rp"/>
                         <outlet property="detailsView" destination="36g-RN-pUi" id="dYO-vX-MRU"/>
                         <outlet property="imageView" destination="JId-vp-tEW" id="uJ8-N1-syK"/>
                         <outlet property="ownerLabel" destination="dY1-5s-xtw" id="TxN-hJ-bII"/>

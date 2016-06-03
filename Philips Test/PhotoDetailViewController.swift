@@ -24,7 +24,9 @@ class PhotoDetailViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView:UIScrollView!
     /// The image view where the photo is displayed
     @IBOutlet weak var imageView:UIImageView!
-    
+    /// The height constraint for the photo description view
+    @IBOutlet weak var descriptionViewHeightConstraint: NSLayoutConstraint!
+    /// The image downloader
     var imageDownloader:ImageDownloader?
     
     // MARK: - Initialization
@@ -58,7 +60,9 @@ class PhotoDetailViewController: UIViewController, UIScrollViewDelegate {
     func getPhotoDetail(photo:PhotoDetail) {
         FlickrAPIManager.sharedManager.getPhotoDetails(photo.photoId!, secret: photo.secret!) { (photoDetail, error) in
             if error != nil {
-                //TODO: - Should warn the error
+                let alert = UIAlertController(title: NSLocalizedString("Error", comment: ""), message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
                 return
             }
             self.photo = photoDetail
@@ -102,10 +106,13 @@ class PhotoDetailViewController: UIViewController, UIScrollViewDelegate {
         self.dateLabel.text = dateFormatter.stringFromDate(dateUploaded)
         self.ownerLabel.text = photo.owner!["realname"] as? String
         if photo.description == "" {
-            self.descriptionLabel.alpha = 0;
+            self.descriptionViewHeightConstraint.priority = 1000
+            self.descriptionViewHeightConstraint.constant = 0
         } else {
+            self.descriptionViewHeightConstraint.priority = 750
             self.descriptionLabel.text = photo.description
         }
+        self.view.layoutIfNeeded()
         let URLRequest = NSURLRequest(URL: photo.getImageUrl())
         
         imageDownloader!.downloadImage(URLRequest: URLRequest) { (response) in
@@ -116,6 +123,8 @@ class PhotoDetailViewController: UIViewController, UIScrollViewDelegate {
             }
         }
     }
+    
+    //MARK: - UIScrollViewDelegate
     
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return self.imageView
