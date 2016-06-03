@@ -1,18 +1,20 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "14FACEAD9C249753C540B9360F29BB7B5AC10755",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "152A0AF421FF2CAD7843CE9DF045EF9DECCD65CB",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "67620B5EFA902936DF04070AF595B76AB0333747" : 0,
     "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : 0,
-    "14FACEAD9C249753C540B9360F29BB7B5AC10755" : 0
+    "14FACEAD9C249753C540B9360F29BB7B5AC10755" : 0,
+    "152A0AF421FF2CAD7843CE9DF045EF9DECCD65CB" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7F24EF8E-A10B-4D1F-9E97-A6FD291BDD08",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "67620B5EFA902936DF04070AF595B76AB0333747" : "Philips%20Test\/Alamofire\/",
     "D2AD29AE1B693121D0EDBB4855C96B75ECBB0D86" : "Philips%20Test\/AlamofireImage\/",
-    "14FACEAD9C249753C540B9360F29BB7B5AC10755" : "Philips%20Test\/"
+    "14FACEAD9C249753C540B9360F29BB7B5AC10755" : "Philips%20Test\/",
+    "152A0AF421FF2CAD7843CE9DF045EF9DECCD65CB" : "flickr-philips\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Philips Test",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -22,6 +24,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/github.com:lcbr1986\/flickr-philips.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "14FACEAD9C249753C540B9360F29BB7B5AC10755"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lcbr1986\/flickr-philips.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "152A0AF421FF2CAD7843CE9DF045EF9DECCD65CB"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Alamofire\/Alamofire.git",
