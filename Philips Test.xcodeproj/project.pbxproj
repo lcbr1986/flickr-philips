@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B22ECD9B1D0082B7005D09D5 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ECD9A1D0082B7005D09D5 /* PhotosTableViewCell.swift */; };
+		B26735F91CFDA62E00F7CDF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26735F81CFDA62E00F7CDF2 /* AppDelegate.swift */; };
+		B26735FB1CFDA62E00F7CDF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26735FA1CFDA62E00F7CDF2 /* ViewController.swift */; };
+		B26735FE1CFDA62E00F7CDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26735FC1CFDA62E00F7CDF2 /* Main.storyboard */; };
+		B26736001CFDA62E00F7CDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26735FF1CFDA62E00F7CDF2 /* Assets.xcassets */; };
+		B26736031CFDA62E00F7CDF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26736011CFDA62E00F7CDF2 /* LaunchScreen.storyboard */; };
+		B267360E1CFDA62E00F7CDF2 /* Philips_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B267360D1CFDA62E00F7CDF2 /* Philips_TestTests.swift */; };
+		B26736191CFDA62E00F7CDF2 /* Philips_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26736181CFDA62E00F7CDF2 /* Philips_TestUITests.swift */; };
+		B26736271CFDD34D00F7CDF2 /* FlickrAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26736261CFDD34D00F7CDF2 /* FlickrAPIManager.swift */; };
+		B26736461CFDDB3500F7CDF2 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26736451CFDDB3500F7CDF2 /* Photo.swift */; };
+		B29C64CD1CFF2F0000BFFF97 /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C64CC1CFF2F0000BFFF97 /* PhotoDetail.swift */; };
+		B29C64D21D0039D300BFFF97 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C64D11D0039D300BFFF97 /* PhotoDetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B267360A1CFDA62E00F7CDF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B26735ED1CFDA62E00F7CDF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B26735F41CFDA62E00F7CDF2;
+			remoteInfo = "Philips Test";
+		};
+		B26736151CFDA62E00F7CDF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B26735ED1CFDA62E00F7CDF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B26735F41CFDA62E00F7CDF2;
+			remoteInfo = "Philips Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B26736441CFDD4F300F7CDF2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B22ECD9A1D0082B7005D09D5 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
+		B26735F51CFDA62E00F7CDF2 /* Philips Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Philips Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26735F81CFDA62E00F7CDF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B26735FA1CFDA62E00F7CDF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B26735FD1CFDA62E00F7CDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B26735FF1CFDA62E00F7CDF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B26736021CFDA62E00F7CDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B26736041CFDA62E00F7CDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26736091CFDA62E00F7CDF2 /* Philips TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Philips TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B267360D1CFDA62E00F7CDF2 /* Philips_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Philips_TestTests.swift; sourceTree = "<group>"; };
+		B267360F1CFDA62E00F7CDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26736141CFDA62E00F7CDF2 /* Philips TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Philips TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26736181CFDA62E00F7CDF2 /* Philips_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Philips_TestUITests.swift; sourceTree = "<group>"; };
+		B267361A1CFDA62E00F7CDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26736261CFDD34D00F7CDF2 /* FlickrAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrAPIManager.swift; sourceTree = "<group>"; };
+		B26736451CFDDB3500F7CDF2 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		B29C64CC1CFF2F0000BFFF97 /* PhotoDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetail.swift; sourceTree = "<group>"; };
+		B29C64D11D0039D300BFFF97 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B26735F21CFDA62E00F7CDF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26736061CFDA62E00F7CDF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26736111CFDA62E00F7CDF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B22ECD981D008289005D09D5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B26735FA1CFDA62E00F7CDF2 /* ViewController.swift */,
+				B29C64D11D0039D300BFFF97 /* PhotoDetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B22ECD991D008292005D09D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B22ECD9A1D0082B7005D09D5 /* PhotosTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B26735EC1CFDA62E00F7CDF2 = {
+			isa = PBXGroup;
+			children = (
+				B26735F71CFDA62E00F7CDF2 /* Philips Test */,
+				B267360C1CFDA62E00F7CDF2 /* Philips TestTests */,
+				B26736171CFDA62E00F7CDF2 /* Philips TestUITests */,
+				B26735F61CFDA62E00F7CDF2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B26735F61CFDA62E00F7CDF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B26735F51CFDA62E00F7CDF2 /* Philips Test.app */,
+				B26736091CFDA62E00F7CDF2 /* Philips TestTests.xctest */,
+				B26736141CFDA62E00F7CDF2 /* Philips TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B26735F71CFDA62E00F7CDF2 /* Philips Test */ = {
+			isa = PBXGroup;
+			children = (
+				B26735F81CFDA62E00F7CDF2 /* AppDelegate.swift */,
+				B29C64CE1CFF3D6600BFFF97 /* PhotoViewer */,
+				B26735FF1CFDA62E00F7CDF2 /* Assets.xcassets */,
+				B26736011CFDA62E00F7CDF2 /* LaunchScreen.storyboard */,
+				B26736041CFDA62E00F7CDF2 /* Info.plist */,
+			);
+			path = "Philips Test";
+			sourceTree = "<group>";
+		};
+		B267360C1CFDA62E00F7CDF2 /* Philips TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				B267360D1CFDA62E00F7CDF2 /* Philips_TestTests.swift */,
+				B267360F1CFDA62E00F7CDF2 /* Info.plist */,
+			);
+			path = "Philips TestTests";
+			sourceTree = "<group>";
+		};
+		B26736171CFDA62E00F7CDF2 /* Philips TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B26736181CFDA62E00F7CDF2 /* Philips_TestUITests.swift */,
+				B267361A1CFDA62E00F7CDF2 /* Info.plist */,
+			);
+			path = "Philips TestUITests";
+			sourceTree = "<group>";
+		};
+		B29C64CE1CFF3D6600BFFF97 /* PhotoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				B22ECD991D008292005D09D5 /* Views */,
+				B22ECD981D008289005D09D5 /* ViewControllers */,
+				B29C64D01CFF3D9A00BFFF97 /* Networking */,
+				B29C64CF1CFF3D8000BFFF97 /* Models */,
+				B26735FC1CFDA62E00F7CDF2 /* Main.storyboard */,
+			);
+			name = PhotoViewer;
+			sourceTree = "<group>";
+		};
+		B29C64CF1CFF3D8000BFFF97 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B26736451CFDDB3500F7CDF2 /* Photo.swift */,
+				B29C64CC1CFF2F0000BFFF97 /* PhotoDetail.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B29C64D01CFF3D9A00BFFF97 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B26736261CFDD34D00F7CDF2 /* FlickrAPIManager.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B26735F41CFDA62E00F7CDF2 /* Philips Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B267361D1CFDA62E00F7CDF2 /* Build configuration list for PBXNativeTarget "Philips Test" */;
+			buildPhases = (
+				B26735F11CFDA62E00F7CDF2 /* Sources */,
+				B26735F21CFDA62E00F7CDF2 /* Frameworks */,
+				B26735F31CFDA62E00F7CDF2 /* Resources */,
+				B26736441CFDD4F300F7CDF2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Philips Test";
+			productName = "Philips Test";
+			productReference = B26735F51CFDA62E00F7CDF2 /* Philips Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B26736081CFDA62E00F7CDF2 /* Philips TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26736201CFDA62E00F7CDF2 /* Build configuration list for PBXNativeTarget "Philips TestTests" */;
+			buildPhases = (
+				B26736051CFDA62E00F7CDF2 /* Sources */,
+				B26736061CFDA62E00F7CDF2 /* Frameworks */,
+				B26736071CFDA62E00F7CDF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B267360B1CFDA62E00F7CDF2 /* PBXTargetDependency */,
+			);
+			name = "Philips TestTests";
+			productName = "Philips TestTests";
+			productReference = B26736091CFDA62E00F7CDF2 /* Philips TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B26736131CFDA62E00F7CDF2 /* Philips TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26736231CFDA62E00F7CDF2 /* Build configuration list for PBXNativeTarget "Philips TestUITests" */;
+			buildPhases = (
+				B26736101CFDA62E00F7CDF2 /* Sources */,
+				B26736111CFDA62E00F7CDF2 /* Frameworks */,
+				B26736121CFDA62E00F7CDF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B26736161CFDA62E00F7CDF2 /* PBXTargetDependency */,
+			);
+			name = "Philips TestUITests";
+			productName = "Philips TestUITests";
+			productReference = B26736141CFDA62E00F7CDF2 /* Philips TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B26735ED1CFDA62E00F7CDF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Luís Rosa";
+				TargetAttributes = {
+					B26735F41CFDA62E00F7CDF2 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					B26736081CFDA62E00F7CDF2 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B26735F41CFDA62E00F7CDF2;
+					};
+					B26736131CFDA62E00F7CDF2 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = B26735F41CFDA62E00F7CDF2;
+					};
+				};
+			};
+			buildConfigurationList = B26735F01CFDA62E00F7CDF2 /* Build configuration list for PBXProject "Philips Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B26735EC1CFDA62E00F7CDF2;
+			productRefGroup = B26735F61CFDA62E00F7CDF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B26735F41CFDA62E00F7CDF2 /* Philips Test */,
+				B26736081CFDA62E00F7CDF2 /* Philips TestTests */,
+				B26736131CFDA62E00F7CDF2 /* Philips TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B26735F31CFDA62E00F7CDF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26736031CFDA62E00F7CDF2 /* LaunchScreen.storyboard in Resources */,
+				B26736001CFDA62E00F7CDF2 /* Assets.xcassets in Resources */,
+				B26735FE1CFDA62E00F7CDF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26736071CFDA62E00F7CDF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26736121CFDA62E00F7CDF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B26735F11CFDA62E00F7CDF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B29C64D21D0039D300BFFF97 /* PhotoDetailViewController.swift in Sources */,
+				B22ECD9B1D0082B7005D09D5 /* PhotosTableViewCell.swift in Sources */,
+				B26736461CFDDB3500F7CDF2 /* Photo.swift in Sources */,
+				B29C64CD1CFF2F0000BFFF97 /* PhotoDetail.swift in Sources */,
+				B26735FB1CFDA62E00F7CDF2 /* ViewController.swift in Sources */,
+				B26735F91CFDA62E00F7CDF2 /* AppDelegate.swift in Sources */,
+				B26736271CFDD34D00F7CDF2 /* FlickrAPIManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26736051CFDA62E00F7CDF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B267360E1CFDA62E00F7CDF2 /* Philips_TestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26736101CFDA62E00F7CDF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B26736191CFDA62E00F7CDF2 /* Philips_TestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B267360B1CFDA62E00F7CDF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B26735F41CFDA62E00F7CDF2 /* Philips Test */;
+			targetProxy = B267360A1CFDA62E00F7CDF2 /* PBXContainerItemProxy */;
+		};
+		B26736161CFDA62E00F7CDF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B26735F41CFDA62E00F7CDF2 /* Philips Test */;
+			targetProxy = B26736151CFDA62E00F7CDF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B26735FC1CFDA62E00F7CDF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26735FD1CFDA62E00F7CDF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B26736011CFDA62E00F7CDF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26736021CFDA62E00F7CDF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B267361B1CFDA62E00F7CDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B267361C1CFDA62E00F7CDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B267361E1CFDA62E00F7CDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Philips Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rosa.luis.Philips-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B267361F1CFDA62E00F7CDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = "Philips Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rosa.luis.Philips-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B26736211CFDA62E00F7CDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Philips TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rosa.luis.Philips-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Philips Test.app/Philips Test";
+			};
+			name = Debug;
+		};
+		B26736221CFDA62E00F7CDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Philips TestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rosa.luis.Philips-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Philips Test.app/Philips Test";
+			};
+			name = Release;
+		};
+		B26736241CFDA62E00F7CDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Philips TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rosa.luis.Philips-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Philips Test";
+			};
+			name = Debug;
+		};
+		B26736251CFDA62E00F7CDF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Philips TestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "rosa.luis.Philips-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Philips Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B26735F01CFDA62E00F7CDF2 /* Build configuration list for PBXProject "Philips Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B267361B1CFDA62E00F7CDF2 /* Debug */,
+				B267361C1CFDA62E00F7CDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B267361D1CFDA62E00F7CDF2 /* Build configuration list for PBXNativeTarget "Philips Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B267361E1CFDA62E00F7CDF2 /* Debug */,
+				B267361F1CFDA62E00F7CDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B26736201CFDA62E00F7CDF2 /* Build configuration list for PBXNativeTarget "Philips TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26736211CFDA62E00F7CDF2 /* Debug */,
+				B26736221CFDA62E00F7CDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B26736231CFDA62E00F7CDF2 /* Build configuration list for PBXNativeTarget "Philips TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B26736241CFDA62E00F7CDF2 /* Debug */,
+				B26736251CFDA62E00F7CDF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B26735ED1CFDA62E00F7CDF2 /* Project object */;
+}
