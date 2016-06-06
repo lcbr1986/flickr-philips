@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Philips Test
+
+  Created by Luis Carlos Rosa on 06/06/16.
+  Copyright © 2016 Luís Rosa. All rights reserved.
+*/
+
+refresh = "Pull to refresh";
