@@ -7,3 +7,9 @@
 */
 
 refresh = "Pull to refresh";
+Flickr_Search = "FlickrSearch";
+insert_search_term = "Please insert a search term to filter the photos";
+Error = "Error";
+no_results = "No results for this search term";
+invalid_results = "Invalid results";
+

@@ -24,6 +24,7 @@
 		B2EF97291D01BA40000557D0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF97241D01BA27000557D0 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2EF972A1D01BA40000557D0 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF97251D01BA27000557D0 /* AlamofireImage.framework */; };
 		B2EF972B1D01BA40000557D0 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2EF97251D01BA27000557D0 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2F6C0AC1D05755B00F17A8B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2F6C0AE1D05755B00F17A8B /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		B29C64D11D0039D300BFFF97 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		B2EF97241D01BA27000557D0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
 		B2EF97251D01BA27000557D0 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
+		B2F6C0AD1D05755B00F17A8B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				B26735FF1CFDA62E00F7CDF2 /* Assets.xcassets */,
 				B26736011CFDA62E00F7CDF2 /* LaunchScreen.storyboard */,
 				B26736041CFDA62E00F7CDF2 /* Info.plist */,
+				B2F6C0AE1D05755B00F17A8B /* Localizable.strings */,
 				B2EF97111D01A7A1000557D0 /* Frameworks */,
 			);
 			path = "Philips Test";
@@ -299,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F6C0AC1D05755B00F17A8B /* Localizable.strings in Resources */,
 				B26736031CFDA62E00F7CDF2 /* LaunchScreen.storyboard in Resources */,
 				B20EF2401D056FA500562027 /* Flickr.plist in Resources */,
 				B26736001CFDA62E00F7CDF2 /* Assets.xcassets in Resources */,
@@ -381,6 +385,14 @@
 				B26736021CFDA62E00F7CDF2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B2F6C0AE1D05755B00F17A8B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2F6C0AD1D05755B00F17A8B /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

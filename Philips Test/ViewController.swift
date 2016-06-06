@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         // Do any additional setup after loading the view, typically from a nib.
         
         refreshControl = UIRefreshControl()
-        refreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("Pull to refresh", comment: ""))
+        refreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("refresh", comment: ""))
         refreshControl.addTarget(self, action: #selector(ViewController.refresh(_:)), forControlEvents: UIControlEvents.ValueChanged)
         tableView.addSubview(refreshControl)
 
@@ -75,7 +75,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.title = NSLocalizedString("Flickr Search", comment: "")
+        self.title = NSLocalizedString("Flickr_Search", comment: "")
     }
     
     override func viewWillDisappear(animated: Bool) {
@@ -90,7 +90,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         self.currentPage = 1
         self.totalPages = 0
         self.photos = [Photo]()
-        self.searchPhotosLabel.text = NSLocalizedString("Please insert a search term to filter the photos", comment: "")
+        self.searchPhotosLabel.text = NSLocalizedString("insert_search_term", comment: "")
     }
 
     // MARK: - Navigation
@@ -128,7 +128,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             self.totalPages = totalPages
             self.photos.appendContentsOf(photos)
             if self.photos.count == 0 {
-                self.searchPhotosLabel.text = NSLocalizedString("No results for this search term", comment: "")
+                self.searchPhotosLabel.text = NSLocalizedString("no_results", comment: "")
                 self.searchPhotosLabel.alpha = 1
             } else {
                 self.searchPhotosLabel.alpha = 0

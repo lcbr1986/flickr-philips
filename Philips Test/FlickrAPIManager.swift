@@ -40,7 +40,7 @@ class FlickrAPIManager {
                 totalPages = results["pages"] as? Int,
                 photos = results["photo"] as? [[String: AnyObject]] else {
                     print("Invalid results")
-                    completion(photos: [Photo](), totalPages: 0, error: NSError(domain: "MyDomain", code: -99, userInfo: [NSLocalizedDescriptionKey: "Invalid results"]))
+                    completion(photos: [Photo](), totalPages: 0, error: NSError(domain: "MyDomain", code: -99, userInfo: [NSLocalizedDescriptionKey: "invalid_results"]))
                     return
             }
             var parsedPhotos = [Photo]()
@@ -69,7 +69,7 @@ class FlickrAPIManager {
             guard let responseJson = response.result.value as? [String: AnyObject],
                 photoInfo = responseJson["photo"] as? [String: AnyObject] else {
                 print("Invalid results")
-                completion(photoDetail: PhotoDetail(), error: NSError(domain: "MyDomain", code: -99, userInfo: [NSLocalizedDescriptionKey: "Invalid results"]))
+                completion(photoDetail: PhotoDetail(), error: NSError(domain: "MyDomain", code: -99, userInfo: [NSLocalizedDescriptionKey: "invalid_results"]))
                 return
             }
             let photoDetail = PhotoDetail(photoInfo)
