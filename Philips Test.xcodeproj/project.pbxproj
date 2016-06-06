@@ -14,8 +14,6 @@
 		B26735FE1CFDA62E00F7CDF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26735FC1CFDA62E00F7CDF2 /* Main.storyboard */; };
 		B26736001CFDA62E00F7CDF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26735FF1CFDA62E00F7CDF2 /* Assets.xcassets */; };
 		B26736031CFDA62E00F7CDF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26736011CFDA62E00F7CDF2 /* LaunchScreen.storyboard */; };
-		B267360E1CFDA62E00F7CDF2 /* Philips_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B267360D1CFDA62E00F7CDF2 /* Philips_TestTests.swift */; };
-		B26736191CFDA62E00F7CDF2 /* Philips_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26736181CFDA62E00F7CDF2 /* Philips_TestUITests.swift */; };
 		B26736271CFDD34D00F7CDF2 /* FlickrAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26736261CFDD34D00F7CDF2 /* FlickrAPIManager.swift */; };
 		B26736461CFDDB3500F7CDF2 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26736451CFDDB3500F7CDF2 /* Photo.swift */; };
 		B29C64CD1CFF2F0000BFFF97 /* PhotoDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29C64CC1CFF2F0000BFFF97 /* PhotoDetail.swift */; };
@@ -71,11 +69,7 @@
 		B26736021CFDA62E00F7CDF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B26736041CFDA62E00F7CDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B26736091CFDA62E00F7CDF2 /* Philips TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Philips TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B267360D1CFDA62E00F7CDF2 /* Philips_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Philips_TestTests.swift; sourceTree = "<group>"; };
-		B267360F1CFDA62E00F7CDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B26736141CFDA62E00F7CDF2 /* Philips TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Philips TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B26736181CFDA62E00F7CDF2 /* Philips_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Philips_TestUITests.swift; sourceTree = "<group>"; };
-		B267361A1CFDA62E00F7CDF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B26736261CFDD34D00F7CDF2 /* FlickrAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrAPIManager.swift; sourceTree = "<group>"; };
 		B26736451CFDDB3500F7CDF2 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		B29C64CC1CFF2F0000BFFF97 /* PhotoDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetail.swift; sourceTree = "<group>"; };
@@ -134,8 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				B26735F71CFDA62E00F7CDF2 /* Philips Test */,
-				B267360C1CFDA62E00F7CDF2 /* Philips TestTests */,
-				B26736171CFDA62E00F7CDF2 /* Philips TestUITests */,
 				B26735F61CFDA62E00F7CDF2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -161,24 +153,6 @@
 				B2EF97111D01A7A1000557D0 /* Frameworks */,
 			);
 			path = "Philips Test";
-			sourceTree = "<group>";
-		};
-		B267360C1CFDA62E00F7CDF2 /* Philips TestTests */ = {
-			isa = PBXGroup;
-			children = (
-				B267360D1CFDA62E00F7CDF2 /* Philips_TestTests.swift */,
-				B267360F1CFDA62E00F7CDF2 /* Info.plist */,
-			);
-			path = "Philips TestTests";
-			sourceTree = "<group>";
-		};
-		B26736171CFDA62E00F7CDF2 /* Philips TestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B26736181CFDA62E00F7CDF2 /* Philips_TestUITests.swift */,
-				B267361A1CFDA62E00F7CDF2 /* Info.plist */,
-			);
-			path = "Philips TestUITests";
 			sourceTree = "<group>";
 		};
 		B29C64CE1CFF3D6600BFFF97 /* PhotoViewer */ = {
@@ -367,7 +341,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B267360E1CFDA62E00F7CDF2 /* Philips_TestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +348,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B26736191CFDA62E00F7CDF2 /* Philips_TestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
