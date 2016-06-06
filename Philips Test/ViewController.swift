@@ -13,22 +13,29 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     /// The array that stores the photos
     var photos:[Photo] = [Photo]()
+    
     /// The current search page
     var currentPage:Int!
+    
     /// Total number of pages in the search
     var totalPages:Int!
+    
     /// The table view that displays the photo list
     @IBOutlet weak var tableView: UITableView!
+    
     /// Refresh controll for the table view
     var refreshControl: UIRefreshControl!
+    
     /// Label to inform the user to search for a term
     @IBOutlet weak var searchPhotosLabel: UILabel!
+    
     /// The image downloader
     var imageDownloader:ImageDownloader?
+    
     /// The search term to search
     var searchTerm:String?
     
-    // http://stackoverflow.com/questions/31373775/how-do-i-create-a-parallax-effect-in-uitableview-with-uiimageview-in-their-proto
+    // Paralax table view cell helpers
     var cellHeight: CGFloat {
         return tableView.frame.width * 9 / 16
     }
@@ -75,6 +82,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewWillDisappear(animated)
         self.title = ""
     }
+    
     /**
      Resets the values for the search
      */
@@ -146,7 +154,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             fatalError("Application error no cell data available")
         }
         let cell:PhotosTableViewCell = tableView.dequeueReusableCellWithIdentifier("photoCell", forIndexPath: indexPath) as! PhotosTableViewCell
-        cell.photoImageView?.image = UIImage()
+        cell.photoImageView?.image = nil
         cell.imageViewHeightConstraint.constant = parallaxImageHeight
         cell.photoTitle?.text = photo.title
         let URLRequest = NSURLRequest(URL: photo.getImageUrl())
@@ -155,6 +163,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 dispatch_async(dispatch_get_main_queue(),{
                     cell.photoImageView?.image = image
                 })
+            } else {
+                cell.photoImageView?.image = nil
             }
         }
         return cell

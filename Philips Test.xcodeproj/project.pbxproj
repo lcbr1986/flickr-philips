@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B20EF2401D056FA500562027 /* Flickr.plist in Resources */ = {isa = PBXBuildFile; fileRef = B20EF23F1D056FA500562027 /* Flickr.plist */; };
 		B22ECD9B1D0082B7005D09D5 /* PhotosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22ECD9A1D0082B7005D09D5 /* PhotosTableViewCell.swift */; };
 		B26735F91CFDA62E00F7CDF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26735F81CFDA62E00F7CDF2 /* AppDelegate.swift */; };
 		B26735FB1CFDA62E00F7CDF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26735FA1CFDA62E00F7CDF2 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B20EF23F1D056FA500562027 /* Flickr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Flickr.plist; sourceTree = "<group>"; };
 		B22ECD9A1D0082B7005D09D5 /* PhotosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosTableViewCell.swift; sourceTree = "<group>"; };
 		B26735F51CFDA62E00F7CDF2 /* Philips Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Philips Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26735F81CFDA62E00F7CDF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				B26736261CFDD34D00F7CDF2 /* FlickrAPIManager.swift */,
+				B20EF23F1D056FA500562027 /* Flickr.plist */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26736031CFDA62E00F7CDF2 /* LaunchScreen.storyboard in Resources */,
+				B20EF2401D056FA500562027 /* Flickr.plist in Resources */,
 				B26736001CFDA62E00F7CDF2 /* Assets.xcassets in Resources */,
 				B26735FE1CFDA62E00F7CDF2 /* Main.storyboard in Resources */,
 			);

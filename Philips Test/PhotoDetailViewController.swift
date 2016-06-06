@@ -10,22 +10,31 @@ import UIKit
 import AlamofireImage
 
 class PhotoDetailViewController: UIViewController, UIScrollViewDelegate {
+    
     /// Photo Object
     var photo:PhotoDetail?
+    
     /// The view holding the photo info
     @IBOutlet weak var detailsView:UIView!
+    
     /// The label that holds the date
     @IBOutlet weak var dateLabel:UILabel!
+    
     /// The label with the name of the author
     @IBOutlet weak var ownerLabel:UILabel!
+    
     /// The text field that has the description
     @IBOutlet weak var descriptionLabel:UILabel!
+    
     /// The scroll view where the image will be displayed
     @IBOutlet weak var scrollView:UIScrollView!
+    
     /// The image view where the photo is displayed
     @IBOutlet weak var imageView:UIImageView!
+    
     /// The height constraint for the photo description view
     @IBOutlet weak var descriptionView:UIView!
+    
     /// The image downloader
     var imageDownloader:ImageDownloader?
     
@@ -71,6 +80,7 @@ class PhotoDetailViewController: UIViewController, UIScrollViewDelegate {
     }
     
     // MARK: - View Changes
+    
     func toggleViews() {
         UIView.animateWithDuration(0.5) {
             if self.detailsView.alpha == 0 {
